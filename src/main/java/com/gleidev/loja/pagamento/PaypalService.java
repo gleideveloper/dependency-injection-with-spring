@@ -13,7 +13,7 @@ public class PaypalService implements GatewayPagamento{
 
     @Override
     public void efetuarPagamento(String numeroCartao, BigDecimal valor){
-        System.out.printf("[PagSeguro] Usando usuario: %s\n", this.usuario);
-        System.out.printf("[PagSeguro] Cobrando %f do cartão %s...\n", valor, numeroCartao);
+        System.out.printf("[Paypal Usando usuario: %s\n", this.usuario);
+        System.out.printf("[Paypal] Cobrando %f do cartão %s...\n", valor, numeroCartao);
     }
 }

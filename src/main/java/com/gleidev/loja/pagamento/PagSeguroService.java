@@ -2,6 +2,7 @@ package com.gleidev.loja.pagamento;
 
 import java.math.BigDecimal;
 
+
 public class PagSeguroService implements GatewayPagamento {
     private String token;
 

@@ -21,8 +21,12 @@ class LojaApplicationTests {
 
         //VendaService vendaService = new VendaService(new PagSeguroService("857db3dbbce149ab8943430f4d18bdf3"));
         //VendaService vendaService = new VendaService(new PaypalService("gleides", "123"));
-        VendaService vendaService = new VendaService(new MockPagSeguroService());
-        vendaService.registrar(venda,"4024007021546352");
+        //VendaService vendaService = new VendaService(new MockPagSeguroService());
+        //vendaService.registrar(venda,"4024007021546352");
+
+        VendaService vendaService = new VendaService(new PagSeguroService("857db3dbbce149ab8943430f4d18bdf3"));
+        //vendaService.setGatewayPagamento(new PaypalService("gleides", "123"));
+        vendaService.registrar(venda,"5416546554694565438");
     }
 
 }
